@@ -2,7 +2,7 @@ import grabber from './modules/grabber.js';
 import Book from './modules/book.js';
 import { DateTime } from './modules/luxon.js';
 import { showAddBook, showBookList, showContact } from './modules/ui.js';
-import { initialLoad } from './modules/initialLoad.js';
+import initialLoad from './modules/initialLoad.js';
 
 const bookf = new Book();
 const date = DateTime;
