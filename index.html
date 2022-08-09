@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Awesome Books</title>
+</head>
+
+<body>
+    <header>
+        <h1>Awesome Books</h1>
+        <ul class="menu">
+            <li><a id="blist" href="#">Book List</a></li>
+            <li><a id="abook" href="#">Add New</a></li>
+            <li><a id="contact" href="#">Contact</a></li>
+        </ul>
+    </header>
+    <div class="date" id="date-section"></div>
+    <section id="book-section">
+        <div class="main-content">
+            <h2>All Awesome books</h2>
+            <ul class="books-list" id="books-container">
+            </ul>
+        </div>
+    </section>
+    <section id="add-books-section">
+        <div>
+            <h2>Add new book</h2>
+        </div>
+        <div>
+            <form onsubmit="event.preventDefault();" id="books-form" name="books-form">
+                <input type="text" name="booktitle" placeholder="Book title">
+                <input type="text" name="bookauthor" placeholder="Author">
+                <button id="submit">Add Book</button>
+            </form>
+        </div>
+    </section>
+    <section id="contact-section">
+        <h2>Contact Information</h2>
+        <h4>Do you have any questions or do you want to say hello?</h4>
+        <h4>You can reach out to us</h4>
+
+        <ul class="contact-list">
+            <li>Our email: mail@mail.com</li>
+            <li>Our Phone Number: 123456789</li>
+            <li>Our Address: Lorem ipsum dolor sit amet consectetu</li>
+        </ul>
+    </section>
+    <footer>
+        <h5>Copyright</h5>
+    </footer>
+    <script type="module" src="./index.js"></script>
+    <script  nomodule src="./app.js"></script>
+    <script>
+        const oldBooks = JSON.parse(localStorage.getItem("booksArray")) || [];
+        function deleteBook(index) {
+            oldBooks.splice(index, 1);
+            localStorage.setItem("booksArray", JSON.stringify(oldBooks));
+        }
+    </script>
+</body>
+
+</html>
