@@ -62,4 +62,3 @@ grab('contact').addEventListener('click', () => {
   grab('book-section').style.display = 'none';
   grab('contact-section').style.display = 'block';
 });
-

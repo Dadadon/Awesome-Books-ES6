@@ -1,4 +1,4 @@
-import { grabber } from './grabber.js';
+import grabber from './grabber.js';
 export function showContact() {
     grabber('add-books-section').style.display = 'none';
     grabber('contact-section').style.display = 'none';
