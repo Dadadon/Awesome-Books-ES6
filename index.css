@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Brush Script MT", cursive;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid;
+  width: auto;
+  height: auto;
+  margin: 1em;
+  padding: 5px;
+}
+
+header ul {
+  display: flex;
+  border: none;
+  gap: 0;
+  list-style: none;
+  padding: 5px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header ul li a:active {
+  color: blue;
+}
+
+header ul li a:visited {
+  color: blue;
+}
+
+header li:nth-child(-n + 2) {
+  border-right: 3px solid #000;
+  padding: 3px 5px;
+}
+
+header li:last-child {
+  padding: 3px 5px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  padding-left: 0;
+  font-size: x-large;
+}
+
+h2 {
+  text-align: center;
+  font-size: x-large;
+}
+
+.date {
+  text-align: end;
+  margin-right: 5%;
+  padding: 1em 0;
+}
+
+.books-list {
+  list-style: none;
+  margin: 1em;
+  border: 3px solid;
+  padding: 5px;
+}
+
+.add-book-btn {
+  margin-left: 100px;
+  justify-self: flex-end;
+}
+
+.book-item {
+  display: flex;
+  gap: 10px;
+  padding: 10%;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.book-item:nth-child(odd) {
+  background-color: rgb(216, 214, 214);
+  padding: 5px 0;
+}
+
+.book-item:nth-child(even) {
+  padding: 5px 0;
+}
+
+button {
+  background-color: #fff;
+  padding: 6px 12px;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  margin-right: 10px;
+  align-items: center;
+  font-weight: bold;
+}
+
+#submit {
+  width: 200px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+form input {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 5px;
+  margin-right: 25%;
+  margin-left: auto;
+  padding: 6px;
+  border: 3px solid #000;
+}
+
+form input::placeholder {
+  color: #000;
+  font-weight: 600;
+}
+
+form button {
+  width: 20%;
+  margin-right: 25%;
+  margin-left: auto;
+  margin-top: 5px;
+  text-align: right !important;
+}
+
+.book-details {
+  width: auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.contact-list {
+  border: none;
+}
+
+#contact-section {
+  width: 80%;
+  margin: 10%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  border: 1px solid black;
+  margin: 5%;
+  width: 90%;
+  padding-left: 5px;
+}
