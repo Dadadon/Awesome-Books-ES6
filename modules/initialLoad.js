@@ -4,7 +4,7 @@ import Book from './book.js';
 const template = document.createElement('template');
 const bookf = new Book();
 
-export default function initialLoad() {
+const initialLoad = () => {
   const oldBooks = JSON.parse(localStorage.getItem('booksArray')) || [];
   grabber('books-container').innerHTML = '';
   oldBooks.forEach((bookItem, index) => {
@@ -24,3 +24,4 @@ export default function initialLoad() {
     grabber('books-container').appendChild(far);
   });
 }
+export default initialLoad;
