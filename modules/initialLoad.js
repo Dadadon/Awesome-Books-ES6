@@ -8,7 +8,7 @@ const initialLoad = () => {
   const oldBooks = JSON.parse(localStorage.getItem('booksArray')) || [];
   grabber('books-container').innerHTML = '';
   oldBooks.forEach((bookItem, index) => {
-    const btn = document.createElement('button');
+    const btn = document.createElement('input');
     btn.className = 'add-book-btn';
     btn.innerText = 'Remove';
     btn.addEventListener('click', () => {
