@@ -1,7 +1,7 @@
 # Awesome-Books-ES6
 
 > This is my Awesome Books project that allows users to add,retrive and remove books from local storage
-Additional description about the project and its features.
+
 
 ## Live Preview Link
 https://dadadon.github.io/Awesome-Books-ES6/
